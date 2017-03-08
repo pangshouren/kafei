@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"/>
+<meta name="MobileOptimized" content="280" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<div class="min-box registe-bg ">
+		<section class="goods-top1">				
+				<img src="images/header.png" alt="">
+			</section>	
+		<div class="register_box  ">                    
+            <p ><input  type="text"  data-name="celnu" placeholder="请输入手机号码" > </p>
+            <p class="clearfix" ><span class="vercode" id="send">获取验证码</span><input class="tl"  type="text"  data-name="vercode" placeholder="请输入验证码" ></p>
+            <p ><input  type="text"  data-name="username" placeholder="请输入姓名" ></p>
+            <p ><input  type="text"  data-name="platenu" placeholder="请输入车牌号" ></p>                  	
+        </div>
+		<div class="register_btn " >
+			 <input type="button" value="提交">
+		</div>   
+		<div class="register_ok" style="display: none;">
+				<div class="min-box">
+					<div class="p010">
+						
+						<img src="images/reg-box.png" alt="">
+						<a href="#"class="reg_btn"><img src="images/321.png" alt=""></a>
+					</div>
+				</div>
+
+			</div>
+			<div class="mask" style="display: none;"></div>
+			
+	</div>
+	<script>
+
+
+$(document).ready(function(e) {			
+			$("#send").click(function(){
+				djstime();
+			});
+			$('.register_btn').click(function(){
+				$('.mask,.register_ok').fadeIn();
+			});
+
+			$('.reg_btn').click(function(){
+				$('.mask,.register_ok').fadeOut();
+			});
+			/*验证码倒计时*/
+			function djstime(){
+				var e1=$("#send").first();
+				var i=60;
+				var interval=setInterval(function(){
+					e1.html("剩余"+i+"秒");
+					
+					i--;
+					if(i<0){
+						$("#send").css({cursor:"pointer"});
+						
+						e1.html("重新获取");
+						clearInterval(interval);	
+					}
+				},500);	
+			}
+});
+
+	</script>
+	
+</body>
+</html>

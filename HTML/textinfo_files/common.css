@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face { font-family: 'icomoon'; src: url('../fonts/icomoon.eot?zem65y'); src: url('../fonts/icomoon.eot?#iefixzem65y') format('embedded-opentype'), url('../fonts/icomoon.ttf?zem65y') format('truetype'), url('../fonts/icomoon.woff?zem65y') format('woff'), url('../fonts/icomoon.svg?zem65y#icomoon') format('svg'); font-weight: normal; font-style: normal; }
+ [class^="icon-"], [class*=" icon-"] {
+font-family: 'icomoon';speak: none;font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.icon-back:before { content: "\e601"; }
+.icon-line:before { content: "\e602"; }
+.icon-serach:before { content: "\e603"; }
+.icon-right_j:before { content: "\e604"; }
+.icon-up-j:before {content: "\e605";}
+.icon-down-j:before {content: "\e606";}
+.icon-add:before { content: "\e609"; }
+.icon-menu:before { content: "\e600"; }
+/*样式重置*/
+* { margin: 0; padding: 0; font-size: 62.5%; font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53"; }
+img { border: medium none; }
+input:focus, select:focus, textarea:focus, button:focus { outline: medium none; }
+input[type="text"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], input[type="email"], input[type="url"], textarea { border: 1px solid; border-radius: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+a { text-decoration: none; outline: none; }
+em, i, strong { font-style: normal; font-weight: normal; }
+li { list-style: outside none none; }
+html, body { height: 100%; }
+body { font-size: 1rem; }
+.clear { clear: both; }
+.w100 { width: 100%; }
+.mt10{ margin-top: 10px;}
+.mt30{ margin-top: 30px;}
+.h10 { height: 10px; }
+.h60 { height: 90px; }
+.p010{ padding:0 10px;}
+.p020{ padding:0 20px;}
+.p040{ padding:0 40px; }
+.fl { float: left !important; }
+.fr { float: right !important; }
+a, button, input { -webkit-tap-highlight-color: rgba(255,0,0,0); }
+input { -webkit-appearance: none; }
+:-moz-placeholder {
+color: #fff
+}
+::-moz-placeholder {
+color: #fff;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color: #e7e5e5;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: #e1e1e1;
+}
+.w100 { width: 100%; }
+
+.boxshow{box-shadow: 0 2px 5px #e4e4e4 !important;}
+
+/*顶部*/
+.min-box{max-width: 640px; margin:0 auto;}
+
